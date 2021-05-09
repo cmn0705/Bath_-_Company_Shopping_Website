@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Contact Form</title>
+<link href="Team5Pj.css" rel="stylesheet" type="text/css">
+
+<script>
+
+ 
+function validateInfo() { 
+ 
+ if (document.myemailform.name.value == "")
+  {
+  alert( "Please provide your name!" );
+  document.registrationForm.name.focus();
+  return false;
+  } 
+ var number = /[0-9]/;
+    if(document.registrationForm.name.value.match(number)) {
+        alert('Please provide your name with alphabet only');
+        return false;
+    }
+
+if (document.myemailform.email.value == "" )
+ {
+ alert( "Please provide your email address!" );
+ document.registrationForm.email.focus();
+ return false;
+ } 
+ 
+if (document.myemailform.tel.value == "" || isNaN(document.myemailform.tel.value) || document.myemailform.tel.value.length != 10)
+ {
+ alert( "Please provide your phone number in this format - dddddddddd - wiht numeric digit only." );
+ document.myemailform.tel.focus();
+ return false;
+ }  
+ 
+ if (document.myemailform.message.value == "" )
+ {
+ alert( "Please provide your message." );
+ document.myemailform.message.focus();
+ return false;
+ }
+ 
+ return (true);
+}
+</script>
+</head>
+
+<body style="width:300px; margin-top:0px">
+
+<!-- Start code for the form-->
+<form action="http://localhost:9091/EditedTeam5Pj/FormPage" method="post" name="myemailform" onsubmit="return(validateInfo());" ><table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td height="88" colspan="2"><br />Send us your questions or comments using the form below.<br />
+      <span style="color:#ed1c24; margin-left:15px;">*</span>Required</td>
+    </tr>
+  <tr>
+    <td width="39%" height="27"><label for='name'>Name:<span style="color: #ed1c24">*</span></label></td>
+    <td width="61%"><input type="text" name="Name"></td>
+  </tr>
+  <tr>
+    <td height="28"><label for='email'>Email Address:<span style="color: #ed1c24">*</span></label></td>
+    <td><input type="text" name="Email"></td>
+  </tr>
+  <tr>
+    <td height="28"><label for='tel'>Tel No:</label></td>
+    <td><input type="text" name="Tel"></td>
+  </tr>
+  <tr>
+    <td><label for='subject'>Enter your subject:<span style="color: #ed1c24">*</span></label></td>
+    <td><p>
+              
+        <input type="radio" name="Subject" value="General Inquiry" id="general_inquiry" />
+        General Inquiry
+        <br />
+        <input type="radio" name="Subject" value="Products' Feedback" id="products_feedback" />
+        Products' Feedback
+        <br />
+        </p></td>
+  </tr>
+  <tr>
+    <td colspan="2"><label for='message'>Enter your message:<span style="color: #ed1c24">*</span></label>
+              <br />
+            <textarea name="Message" cols="35" rows="4" id="message" accesskey="tab" tabindex="4"></textarea></td>
+    </tr>
+  <tr>
+    <td colspan="2" align="center"><br />
+            <input type="submit" id="submit" style="font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif" accesskey="tab" tabindex="5"/></td>
+  </tr>
+</table>
+</form>
+
+</body>
+</html>

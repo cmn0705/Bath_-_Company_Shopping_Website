@@ -1,0 +1,23 @@
+<web-app>
+
+<servlet>
+    <servlet-name>FormServlet</servlet-name>
+    <servlet-class>FormPage</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>FormServlet</servlet-name>
+    <url-pattern>/FormPage</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>CartServlet</servlet-name>
+    <servlet-class>AddToCart</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CartServlet</servlet-name>
+    <url-pattern>/AddToCart</url-pattern>
+</servlet-mapping>
+
+</web-app>
