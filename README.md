@@ -1,7 +1,25 @@
 ﻿
-*Tags: html, css, Servlet, Tomcat
+*Tags: Frontend, Backend, Web Development*
 
-[**Bath & Company Web Application**](https://cmn0705.github.io/Bath_-_Company_Shopping_Website/tomcat/webapps/EditedTeam5Pj/index.html)
+[**Bath & Company Shopping Website**](https://cmn0705.github.io/Bath_-_Company_Shopping_Website/tomcat/webapps/EditedTeam5Pj/index.html)
+
+**Description:**
+- Developed a shopping website that allows customers to place orders online & submit feedbacks.
+- Built different sections of the website, including product sections, cart functionalities that can add items and displays total, feedback section that can save customers’ feedbacks in the server.
+- Tools used: *html, css, Java, Servlet, Tomcat*
+
+**Files:**
+- index.html
+- soap.html
+- towel.html
+- tips.html
+- contact.html
+- form-page.html
+- Team5Pj.css
+- scripts.js
+- AddToCart.java
+- FormPage.java
+- web.xml
 
 **How to run:**
 
